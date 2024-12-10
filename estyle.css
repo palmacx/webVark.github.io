@@ -1,0 +1,102 @@
+body,html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('img/reloj.jpg') ;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    opacity: 0.8;
+}
+
+.form-box{
+    width: 400px;
+    padding: 40px;
+    background: #2c3e50;
+    text-align: center;
+}
+
+.form-box{
+    width: 400px;
+    padding: 40px;
+    background: #2c3e50;
+    text-align: center;
+}
+
+
+.form-title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: "Segoe UI";
+}
+
+.form-box input[type="text"],
+.form-box input[type="email"],
+.form-box input[type="password"],
+.form-box button[type="submit"],
+.form-box .boto{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    padding: 14px 10px;
+    text-align: center;
+    border: 2px solid #fff;
+    width: 270px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    font-weight: bold;
+}
+
+
+
+.form-box input[type="text"]:focus,
+.form-box input[type="email"]:focus,
+.form-box input[type="password"]:focus{
+    width: 300px;
+    border-color: aqua;
+    color: #fff;
+}
+
+.form-box button[type="submit"],
+.form-box .boto{
+    border: 0;
+    background: #fff;
+    cursor: pointer;
+    border: 2px solid #fff;
+    color: black;
+}
+
+.form-box button[type="submit"]:hover{ 
+    background: none;
+    color: #fff;
+}
+
+.form-box .boto:hover{ 
+    background: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.form-box a{
+    color: rgba(255, 255, 255, 0.479);
+    font-family: "Segoe UI";
+}
+
+.form-box a:hover{
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+}
+
