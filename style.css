@@ -2,30 +2,19 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    max-width: 1200px;
-    overflow-x: hidden;
-    width: 100%; /* O el ancho fijo que prefieras */
-    height: 100%; /* Mantén la altura completa */
-    
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1%;
+    padding: 10px;
     background-color: rgba(255, 255, 255, 0.89);
     border-bottom: 2px solid #2c3e50;
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 900;
-}
-
-* {
-    margin: 0;
-    padding: 0%;
-    box-sizing: border-box; /* Esto ayuda a evitar que el padding y el borde afecten el tamaño de los elementos */
+    z-index: 1000;
 }
 
 .logo {
@@ -105,10 +94,10 @@ header {
         align-items: center;
         background-color: rgba(255, 255, 255, 0.95);
         position: absolute;
-        top: 3%; /* Ajusta según el tamaño del header */
+        top: 60px; /* Ajusta según el tamaño del header */
         left: 0;
         width: 100%;
-        padding:2% 0;
+        padding: 10px 0;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
@@ -294,11 +283,26 @@ article {
     margin: 20px 0;
 }
 
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    article {
+        padding: 10px; /* Reduce el padding en pantallas pequeñas */
+        padding-top: 15%;
+        margin: 10px; /* Asegura espacio a los lados en móviles */
+    }
 
+    .texto h1, .texto h2 {
+        font-size: 22px; /* Reduce ligeramente el tamaño de encabezados */
+    }
+
+    .texto p {
+        font-size: 16px; /* Ajusta el tamaño del texto */
+    }
+}
 
 .snoso{
-    padding: 1%;
-    width: 100%;
+    padding: 20%;
+    width: 50%;
     background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -311,7 +315,7 @@ article {
     font-family: 'Segoe UI';
     border: 8px solid #2c3e50;
     border-radius: 5px;
-    width: 100%;
+    width: 97.5%;
     position: static;
 }
 
@@ -325,7 +329,6 @@ article {
     color: white;
     text-align: initial;
     font-size: 20px;
-    width: 100%;
 }
 
 .for{
@@ -336,13 +339,13 @@ article {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: initial;
     font-size: large;
-    padding: 5px;
+    padding: 5px 70px;
     background: #fff;
     color: #2c3e50;
 }
 
 .col{
-    padding: 5%;
+    padding: 7%;
     padding-top: 0%;
 }
 
@@ -380,20 +383,19 @@ article {
     font-size: x-large;
     color: #fff;
     background-image: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("") ;
-    
-   
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding: 2%;
-    margin-top: 10%;
+    margin-top: 110px;
 }
 
 
 
-
-
 .nos{
-    
+    width: 2%;
     text-align: center;
-    
+    margin-left: 2%;
 }
 
 .info a{
@@ -408,7 +410,7 @@ article {
 }
 
 .info{
-    padding: 3%;
+    padding: 1%;
     background: linear-gradient(to right, rgb(30, 31, 71), rgba(0, 140, 255, 0.945), rgb(62, 75, 255));
     font-family: sans-serif;
     font-size: 23px;
@@ -427,7 +429,7 @@ article {
     margin: 2% 3%;
     border-radius: 10px;
     text-align: justify;
-    width: 500px;
+    width: 90%;
 }
 
 .Diagrama{
@@ -444,7 +446,7 @@ margin: 0% 4%;
 }
 
 .contacto{
-    padding: 100px;
+    padding: 3%;
     background-image: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('img/contacto.jpg') ;
     background-repeat: no-repeat;
     background-position: center center;
@@ -452,7 +454,7 @@ margin: 0% 4%;
     font-family: sans-serif;
     font-size: 23px;
     color: white;
-margin: 3% 4%;
+    margin: 3% 4%°;
 }
 
 .mb-3{
@@ -485,20 +487,18 @@ margin: 3% 4%;
 }
 
 /*seccion de ayuda*/
-
 .etiayuda{
     text-align: center;
     font-family: sans-serif;
     font-size: x-large;
     color: #fff;
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("/img/fondo.jpg") ;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("") ;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-size: cover;
-    padding: 3%;
-    margin-top: 1%;
+    padding: 2%;
+    margin-top: 110px;
 }
-
 
 /*modal*/
 .avisoconte{
@@ -518,6 +518,16 @@ margin: 3% 4%;
 .show{
     pointer-events: auto;
     opacity: 1;
+}
+
+.imgb {
+    width: 90%; /* Hace que las imágenes ocupen el 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Redondea las esquinas de la imagen */
+    margin: 10px 0; /* Agrega márgenes en la parte superior e inferior */
+    display: block; /* Hace que la imagen sea un bloque, sin espacio debajo */
+    max-width: 95%; /* Asegura que las imágenes no excedan el ancho del contenedor */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor de la imagen */
 }
 
 .modal{
@@ -570,21 +580,18 @@ button[type="submit"]:hover{
     font-size: 15px;
 }
 
-.ayudas {
-    text-align: left;
-    color: #fff;
-    background-color: #ffffff;
-    width: 100%; /* Cambia el auto por un 100% para aprovechar el espacio disponible */
-    margin: 2%;
-    padding: 5% 10%; /* Utiliza valores relativos para el padding */
+.ayudas{
+    text-align: center;
     font-family: sans-serif;
-    border-radius: 7px;
-    border: 2px solid silver;
-    font-size: large;
-    background-image: linear-gradient(1deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/img/pregunfre.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    overflow: hidden;
+    font-size: x-large;
+    color: #fff;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("") ;
+    
+    background-position: center;
+    background-size: cover;
+    padding: 2%;
+    margin-top: 110px;
+    
 }
 
 .ayudas h2{
@@ -604,12 +611,9 @@ button[type="submit"]:hover{
 
 footer {
     background-color: #f2f2f2;
-    padding: 3px;
+    padding: 10px;
     text-align: center;
     font-family: sans-serif;
-    width: 100%;
-    max-width: 100%;
-    padding-right: 0%;
 }
 
 
@@ -648,16 +652,7 @@ footer {
     color: white;
 }
   
-.elemento-animado {
-    width: 600px;
-    height: 50px;
-    animation-name: mover;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0s;
-    animation-iteration-count:1;
-    animation-direction: alternate;
-}
+
 
 
 /*seccion de usuarios*/
@@ -695,18 +690,7 @@ footer {
     
 }
   
-@keyframes mover {
-    0% {
-      transform: translateX(0);
-    }
-    50% {
-      transform: translateX(300px);
-    }
-    100% {
-      transform: translateX(0);
-    }
-}
-  
+ 
 
 
   
