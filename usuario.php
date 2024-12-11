@@ -27,7 +27,8 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
             <img src="img/Vark.ico" height="90px" alt="LogoGDS">
             <p><b>VARK Test</b></p>
         </div>
-        <nav class="navegacion">
+        <button id="menu-toggle" class="menu-button">☰</button>
+        <nav class="navegacion" id="menu">
             <a href="index.html">Inicio</a>
             <a href="cuestionario/cuestionario.html">Test</a>
             <a href="nosotros.html">Sobre nosotros</a>

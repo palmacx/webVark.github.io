@@ -2,37 +2,23 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    padding: 0%;
+    
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2%;
+    padding: 1%;
     background-color: rgba(255, 255, 255, 0.89);
     border-bottom: 2px solid #2c3e50;
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1000;
+    z-index: 900;
 }
 
-@media (max-width: 1000px) {
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1%;
-        background-color: rgba(255, 255, 255, 0.89);
-        border-bottom: 2px solid #2c3e50;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        z-index: 1000;
-    }
-    
-}
+
 
 .logo {
     display: flex;
@@ -315,11 +301,16 @@ article {
     .texto p {
         font-size: 16px; /* Ajusta el tamaño del texto */
     }
+
+    .etinosotros{
+        
+        margin-top: 10%;
+    }
 }
 
 .snoso{
-    padding: 20%;
-    width: 50%;
+    padding: 5%;
+    width: 10%;
     background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -332,7 +323,7 @@ article {
     font-family: 'Segoe UI';
     border: 8px solid #2c3e50;
     border-radius: 5px;
-    width: 97.5%;
+    width: 100%;
     position: static;
 }
 
@@ -346,6 +337,7 @@ article {
     color: white;
     text-align: initial;
     font-size: 20px;
+    width: 100%;
 }
 
 .for{
@@ -356,13 +348,13 @@ article {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: initial;
     font-size: large;
-    padding: 5px 70px;
+    padding: 5px;
     background: #fff;
     color: #2c3e50;
 }
 
 .col{
-    padding: 7%;
+    padding: 5%;
     padding-top: 0%;
 }
 
@@ -404,17 +396,19 @@ article {
     background-position: center center;
     background-size: cover;
     padding: 2%;
-    margin-top: 3%;
+    margin-top: 10%;
 }
+
+
 
 .noso{
     display: flex;
 }
 
 .nos{
-    width: 2%;
+    width: 100%;
     text-align: center;
-    margin-left: 2%;
+    
 }
 
 .info a{
@@ -516,8 +510,8 @@ margin: 3% 4%;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    padding: 60px;
-    margin-top: 34px;
+    padding: 3%;
+    margin-top: 1%;
 }
 
 
@@ -596,7 +590,7 @@ button[type="submit"]:hover{
     color: #fff;
     background-color: #ffffff;
     width: auto;
-    margin: 10px 150px;
+    margin: 2%;
     padding: 40px 90px;
     font-family: sans-serif;
     border-radius: 7px;
@@ -630,6 +624,8 @@ footer {
     text-align: center;
     font-family: sans-serif;
     width: 100%;
+    max-width: 100%;
+    padding-right: 0%;
 }
 
 
