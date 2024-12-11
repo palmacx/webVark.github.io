@@ -531,7 +531,7 @@ margin: 0% 4%;
 }
 
 .imgbh{
-    width: 450px; /* Hace que las imágenes ocupen el 100% del contenedor */
+    width: 400px; /* Hace que las imágenes ocupen el 100% del contenedor */
     height: auto; /* Mantiene la proporción de la imagen */
     border-radius: 10px; /* Redondea las esquinas de la imagen */
     margin: 10px 0; /* Agrega márgenes en la parte superior e inferior */
