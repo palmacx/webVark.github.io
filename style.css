@@ -294,24 +294,7 @@ article {
     margin: 20px 0;
 }
 
-/* Estilo responsivo */
-@media (max-width: 100px) {
-    article {
-        padding: 10px; /* Reduce el padding en pantallas pequeñas */
-        padding-top: 15%;
-        margin: 10px; /* Asegura espacio a los lados en móviles */
-    }
 
-    .texto h1, .texto h2 {
-        font-size: 22px; /* Reduce ligeramente el tamaño de encabezados */
-    }
-
-    .texto p {
-        font-size: 16px; /* Ajusta el tamaño del texto */
-    }
-
-    
-}
 
 .snoso{
     padding: 1%;
