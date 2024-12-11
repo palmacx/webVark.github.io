@@ -521,13 +521,24 @@ margin: 0% 4%;
 }
 
 .imgb {
-    width: 400px; /* Hace que las imágenes ocupen el 100% del contenedor */
+    width: 450px; /* Hace que las imágenes ocupen el 100% del contenedor */
     height: auto; /* Mantiene la proporción de la imagen */
     border-radius: 10px; /* Redondea las esquinas de la imagen */
     margin: 10px 0; /* Agrega márgenes en la parte superior e inferior */
     display: block; /* Hace que la imagen sea un bloque, sin espacio debajo */
     max-width: 95%; /* Asegura que las imágenes no excedan el ancho del contenedor */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor de la imagen */
+}
+
+.imgbh{
+    width: 450px; /* Hace que las imágenes ocupen el 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Redondea las esquinas de la imagen */
+    margin: 10px 0; /* Agrega márgenes en la parte superior e inferior */
+    display: block; /* Hace que la imagen sea un bloque, sin espacio debajo */
+    max-width: 95%; /* Asegura que las imágenes no excedan el ancho del contenedor */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor de la imagen */
+    padding-top: 100px;
 }
 
 .modal{
