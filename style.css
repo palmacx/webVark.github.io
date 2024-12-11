@@ -2,19 +2,36 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
+    padding: 0%;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 2%;
     background-color: rgba(255, 255, 255, 0.89);
     border-bottom: 2px solid #2c3e50;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+}
+
+@media (max-width: 1000px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1%;
+        background-color: rgba(255, 255, 255, 0.89);
+        border-bottom: 2px solid #2c3e50;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
+    
 }
 
 .logo {
@@ -94,10 +111,10 @@ header {
         align-items: center;
         background-color: rgba(255, 255, 255, 0.95);
         position: absolute;
-        top: 60px; /* Ajusta según el tamaño del header */
+        top: 3%; /* Ajusta según el tamaño del header */
         left: 0;
         width: 100%;
-        padding: 10px 0;
+        padding:2% 0;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
@@ -609,9 +626,12 @@ button[type="submit"]:hover{
 
 footer {
     background-color: #f2f2f2;
-    padding: 10px;
+    padding: 3px;
     text-align: center;
     font-family: sans-serif;
+    width: 100%;
+    max-width: 100%;
+    padding-right: 0%;
 }
 
 
