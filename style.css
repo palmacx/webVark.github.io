@@ -2,8 +2,10 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    
+    max-width: 1200px;
     overflow-x: hidden;
+    width: 100%; /* O el ancho fijo que prefieras */
+    height: 100%; /* Mantén la altura completa */
     
 }
 
