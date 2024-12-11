@@ -570,22 +570,20 @@ button[type="submit"]:hover{
     font-size: 15px;
 }
 
-.ayudas{
-    text-align: center;
+.ayudas {
+    text-align: left;
     color: #fff;
     background-color: #ffffff;
-    width: auto;
+    width: 100%; /* Cambia el auto por un 100% para aprovechar el espacio disponible */
     margin: 2%;
-    padding: 40px 90px;
+    padding: 5% 10%; /* Utiliza valores relativos para el padding */
     font-family: sans-serif;
     border-radius: 7px;
     border: 2px solid silver;
     font-size: large;
-    text-align: left;
-    background-image: linear-gradient(1deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/img/pregunfre.jpg") ;
+    background-image: linear-gradient(1deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/img/pregunfre.jpg");
     background-repeat: no-repeat;
     background-position: center center;
-    
 }
 
 .ayudas h2{
