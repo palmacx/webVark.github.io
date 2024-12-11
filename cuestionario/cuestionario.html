@@ -8,6 +8,7 @@
     <title> Test</title>
     <link rel="icon" href="../img/Vark.ico">
     <link rel="stylesheet" type="text/css" href="../style.css">
+    <script src="javajava.js"></script>
 </head><!--  -->
 
 <body>
@@ -16,12 +17,13 @@
             <img src="../img/Vark.ico" height="90px" alt="LogoGDS">
             <p><b>VARK Test</b></p>
         </div>
+        <button id="menu-toggle" class="menu-button">☰</button>
         <form id="search-form">
             <input type="text" id="search-input" placeholder="Buscar...">
             <button class="btnnn" type="submit">Buscar</button>
         </form>
-        <nav class="navegacion">
-            <a href="../index.html">Inicio</a>
+        <nav class="navegacion" id="menu">
+            <a href="../index.html" id="inizio">Inicio</a>
             <a href="cuestionario.html" id="cues">Test</a>
             <a href="../nosotros.html">Sobre nosotros</a>
             <a href="../ayuda.html">Ayuda</a>
@@ -338,5 +340,22 @@
         integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp"
         crossorigin="anonymous"></script>
 </body>
+
+<script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+        const menu = document.getElementById('menu');
+        menu.classList.toggle('active');
+    });
+</script>
+
+<script>
+    const aside = document.getElementById('sidebar');
+    const toggleButton = document.getElementById('toggle-aside');
+
+    toggleButton.addEventListener('click', () => {
+        aside.classList.toggle('active');
+    });
+</script>
+
 
 </html>

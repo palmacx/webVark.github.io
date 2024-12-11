@@ -14,12 +14,13 @@
             <img src="img/Vark.ico" height="90px" alt="LogoGDS">
             <p><b>VARK test</b></p>
         </div>
+        <button id="menu-toggle" class="menu-button">☰</button>
         <form id="search-form">
             <input type="text" id="search-input" placeholder="Buscar...">
             <button class="btnnn" type="submit">Buscar</button>
         </form>
-        <nav class="navegacion">
-            <a href="inicio.html">Inicio</a>
+        <nav class="navegacion" id="menu">
+            <a href="index.html">Inicio</a>
             <a href="/cuestionario/cuestionario.html">Test</a>
             <a href="nosotros.html">Sobre nosotros</a>
             <a href="ayuda.html" id="ayu">Ayuda</a>
@@ -77,4 +78,21 @@
     </footer>
 
 </body>
+
+<script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+        const menu = document.getElementById('menu');
+        menu.classList.toggle('active');
+    });
+</script>
+
+<script>
+    const aside = document.getElementById('sidebar');
+    const toggleButton = document.getElementById('toggle-aside');
+
+    toggleButton.addEventListener('click', () => {
+        aside.classList.toggle('active');
+    });
+</script>
+
 </html>

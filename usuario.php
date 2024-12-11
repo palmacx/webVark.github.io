@@ -52,4 +52,21 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         <p>© 2024 VARK Test. Todos los derechos reservados.</p> 
     </footer>
 </body>
+
+<script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+        const menu = document.getElementById('menu');
+        menu.classList.toggle('active');
+    });
+</script>
+
+<script>
+    const aside = document.getElementById('sidebar');
+    const toggleButton = document.getElementById('toggle-aside');
+
+    toggleButton.addEventListener('click', () => {
+        aside.classList.toggle('active');
+    });
+</script>
+
 </html>

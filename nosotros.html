@@ -7,6 +7,7 @@
     <link rel="icon" href="img/Vark.ico">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Nosotros</title>
+    <script src="javajava.js"></script>
 </head>
 <body>
     <header>
@@ -14,11 +15,12 @@
             <img src="img/Vark.ico" height="90px" alt="LogoGDS">
             <p><b>VARK Test</b></p>
         </div>
+        <button id="menu-toggle" class="menu-button">☰</button>
         <form id="search-form">
             <input type="text" id="search-input" placeholder="Buscar...">
             <button class="btnnn" type="submit">Buscar</button>
         </form>
-        <nav class="navegacion">
+        <nav class="navegacion" id="menu">
             <a href="index.html">Inicio</a>
             <a href="cuestionario/cuestionario.html">Test</a>
             <a href="nosotros.html" id="nos">Sobre nosotros</a>
@@ -92,4 +94,21 @@
         <p>© 2024 VAK Test. Todos los derechos reservados.</p>
     </footer>
 </body>
+
+<script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+        const menu = document.getElementById('menu');
+        menu.classList.toggle('active');
+    });
+</script>
+
+<script>
+    const aside = document.getElementById('sidebar');
+    const toggleButton = document.getElementById('toggle-aside');
+
+    toggleButton.addEventListener('click', () => {
+        aside.classList.toggle('active');
+    });
+</script>
+
 </html>
